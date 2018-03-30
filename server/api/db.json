@@ -1,13 +1,6 @@
 {
   "items": [
     {
-      "id": 1,
-      "img": "number-1.png",
-      "name": "Item 1",
-      "description": "This is a description",
-      "featured": false
-    },
-    {
       "id": 2,
       "img": "number-2-blue-icon.png",
       "name": "Item 2",
