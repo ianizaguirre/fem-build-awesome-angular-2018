@@ -4,6 +4,7 @@ import { ItemsComponent } from './items/items.component';
 import { WidgetsComponent } from './widgets/widgets.component';
 import { FeaturedItemComponent } from './items/featured-item/featured-item.component';
 import { FeaturedWidgetComponent } from './widgets/featured-widget/featured-widget.component';
+import { GizmoComponent } from './gizmo/gizmo.component';
 
 const routes: Routes = [
   {path: '',      redirectTo: '/items', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'widgets', component: WidgetsComponent, children: [
     {path: 'featured/:id', component: FeaturedWidgetComponent}
   ]},
+  {path: 'gizmo', component: GizmoComponent},
   {path: '**',     redirectTo: '/items', pathMatch: 'full'}
 ];
 

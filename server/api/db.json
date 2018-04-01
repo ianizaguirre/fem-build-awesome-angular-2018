@@ -9,10 +9,13 @@
     },
     {
       "id": 3,
-      "img": "number-3-icon.png",
-      "name": "Item 3",
-      "description": "This is a lovely item",
-      "featured": true
+      "name": "cxv",
+      "description": "xcvxcv"
+    },
+    {
+      "id": 4,
+      "name": "cxvcxv",
+      "description": "xcvxcv"
     }
   ],
   "widgets": [

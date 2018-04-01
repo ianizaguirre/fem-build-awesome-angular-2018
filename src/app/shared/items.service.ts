@@ -12,6 +12,8 @@ const HEADER = { headers: new Headers({ 'Content-Type': 'application/json' }) };
 export class ItemsService {
   constructor(private http: Http) {}
 
+  itemsMessage = 'My Name is Ian';
+
   loadItems() {
     return this.http.get(BASE_URL)
       .map(res => res.json())

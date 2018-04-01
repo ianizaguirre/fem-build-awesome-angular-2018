@@ -11,6 +11,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class ItemsComponent implements OnInit {
   items: Array<Item>;
   selectedItem: Item;
+  itemsMessage;
 
   constructor(
     private itemsService: ItemsService,
@@ -26,6 +27,7 @@ export class ItemsComponent implements OnInit {
           this.diffFeaturedItems(items);
         }
       });
+    this.itemsMessage = this.itemsService.itemsMessage;
   }
 
   // diffFeaturedItems handles the case where one item is set as featured-item in the database,

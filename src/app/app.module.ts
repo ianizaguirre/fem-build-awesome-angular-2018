@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { Ng2RestAppRoutingModule } from './app-routing.module';
 
-import { ItemsService, WidgetsService } from './shared';
+import { ItemsService, WidgetsService, GizmoService } from './shared';
 
 import { AppComponent } from './app.component';
 import { ItemsComponent } from './items/items.component';
@@ -15,6 +15,7 @@ import { WidgetsComponent } from './widgets/widgets.component';
 import { WidgetsListComponent } from './widgets/widgets-list/widgets-list.component';
 import { WidgetDetailComponent } from './widgets/widget-detail/widget-detail.component';
 import { FeaturedWidgetComponent } from './widgets/featured-widget/featured-widget.component';
+import { GizmoComponent } from './gizmo/gizmo.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FeaturedWidgetComponent } from './widgets/featured-widget/featured-widg
     WidgetsComponent,
     WidgetsListComponent,
     WidgetDetailComponent,
-    FeaturedWidgetComponent
+    FeaturedWidgetComponent,
+    GizmoComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,7 @@ import { FeaturedWidgetComponent } from './widgets/featured-widget/featured-widg
     HttpModule,
     Ng2RestAppRoutingModule
   ],
-  providers: [ItemsService, WidgetsService],
+  providers: [ItemsService, WidgetsService, GizmoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
